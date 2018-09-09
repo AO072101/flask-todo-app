@@ -1,0 +1,10 @@
+version: '2.1'
+
+services:
+  flask-todo-app:
+    image: flask-todo-app
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+        - 5000:5000
